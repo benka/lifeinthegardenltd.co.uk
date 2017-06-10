@@ -1,0 +1,114 @@
+//  Mixins
+.logo-big {
+    color: @dgreen;
+    font-size: @font-big;
+    line-height: 0.8;
+}
+
+.logo-small {
+    color: @dgreen;
+    font-size: @font-small;
+    line-height: 0.4;
+}
+
+.huge {
+    font-size: 60px;
+    text-align: right;
+}
+
+.brand-heading {
+    font-family: 'Gentium Book Basic', serif;
+    text-transform: none;
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
+    clear: both;
+}
+
+.intro-text {
+    clear: both;
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
+}
+
+.heavy {
+    font-weight: 700;
+}
+
+.t-pad-50 {
+    margin-top: 50px;
+}
+
+.t-pad-large {
+    margin-top: 200px;
+}
+
+.b-pad-100 {
+    margin-bottom: 100px;
+}
+
+.b-pad-30 {
+    margin-bottom: 30px;
+}
+
+.b-pad-10 {
+    margin-bottom: 10px;
+}
+
+.bg-navbar {
+    background: @bg_dark_transp-50; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@bg_navbar_transp-top, @bg_navbar_transp-bottom); /*Safari 5.1-6*/
+    background: -o-linear-gradient(@bg_navbar_transp-top, @bg_navbar_transp-bottom); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(@bg_navbar_transp-top, @bg_navbar_transp-bottom); /*Fx 3.6-15*/
+    background: linear-gradient(@bg_navbar_transp-top, @bg_navbar_transp-bottom); /*Standard*/ 
+}
+
+.bg-white {
+    background-color: @bg_white;
+    color: @bg_inv_white;
+}
+
+.bg-light-brown {
+    background-color: @bg_light_brown;
+    color: @bg_inv_white;    
+}
+
+.bg-brown {
+    background-color: @bg_brown;
+    color: @bg_inv_white;    
+}
+
+.bg-dark {
+    background-color: @bg_dark;
+    color: @bg_white;
+}
+
+.bg-transp {
+    background-color: @bg_transp;
+    color: @bg_inv_white;
+}
+
+.cust_col {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+hr {
+    margin: 0 20%;
+}
+
+.page-scroll {
+    font-size: 16px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px 0 @bg_dark;
+}
+
+.shadow-light {
+    box-shadow: 0 0 10px 0 @bg_light;
+}
+
+.jumbotron {
+    h1 {
+        border-bottom: 1px solid @green;
+    }
+}

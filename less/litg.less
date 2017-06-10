@@ -1,0 +1,362 @@
+@import "variables.less";
+@import "mixins.less";
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #fdfdfd;
+    background-color: @bg_dark;
+    /*background: url(../img/litg.jpg) no-repeat bottom right fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+body.main {
+    background: url(../img/litg.jpg) no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 20px;
+    line-height: 1.5;
+    @media(min-width:768px) {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: @primary;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: darken(@primary,20%);
+    }
+}
+
+.light {
+    font-weight: 400;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid fade(white, 30%);
+    /*text-transform: uppercase;*/
+    font-family: 'Open Sans', sans-serif;
+    background-color: @bg_dark;
+    .navbar-toggle {
+        color: white;
+        background-color: fade(white, 20%);
+        font-size: 12px;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+    .navbar-brand {
+        font-weight: 700;
+        &:focus {
+            outline: none;
+        }
+    }
+    a {
+        color: white;
+    }
+    .nav {
+        li {
+            a {
+                -webkit-transition: background .3s ease-in-out;
+                -moz-transition: background .3s ease-in-out;
+                transition: background .3s ease-in-out;
+                &:hover {
+                    color: fade(white, 80%);
+                    outline: none;
+                    background-color: transparent;
+                }
+                &:focus,
+                &:active {
+                    outline: none;
+                    background-color: transparent;
+                }
+            }
+            &.active {
+                outline: none;
+                a {
+                    background-color: fade(white, 30%);
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width:768px) {
+        padding: 15px 0;
+        border-bottom: none;
+        letter-spacing: 1px;
+        background: @bg_dark_transp-50; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(@bg_navbar_transp-top, @bg_navbar_transp-bottom); /*Safari 5.1-6*/
+        background: -o-linear-gradient(@bg_navbar_transp-top, @bg_navbar_transp-bottom); /*Opera 11.1-12*/
+        background: -moz-linear-gradient(@bg_navbar_transp-top, @bg_navbar_transp-bottom); /*Fx 3.6-15*/
+        background: linear-gradient(@bg_navbar_transp-top, @bg_navbar_transp-bottom); /*Standard*/ 
+
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -o-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+        &.top-nav-collapse {
+            padding: 4px 0;
+            background: @bg_dark;
+            box-shadow: 0 0 20px 0 @bg_dark;
+        }
+    }
+}
+
+.intro {
+    color: @dgreen;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    text-align: center;
+
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .intro-text {
+            font-size: @font-small;
+        }
+    }
+    
+    @media(min-width:768px) {
+        height: 100%;
+        padding: 0;
+        .intro-body {
+            .intro-text {
+                font-size:  @font-small;
+            }
+        }
+    }
+}
+
+.sub-intro {
+    color: @dgreen;
+    display: table;
+    width: 100%;
+    height: 50%;
+    padding-top: 50px;
+    text-align: center;
+
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .intro-text {
+            font-size: @font-small;
+        }
+    }
+
+    @media(min-width:768px) {
+        height: 50%;
+        padding: 0;
+        .intro-body {
+            .intro-text {
+                font-size:  @font-small;
+            }
+        }
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    /*border: 2px solid @dgreen;
+    border-radius: 100% !important;*/
+    font-size: 40px;
+    color: @dgreen;
+    background: transparent;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    &:hover,
+    &:focus {
+        outline: none;
+        color: @lgreen;
+        background: fade(@lgreen, 10%);
+    }
+    i.animated {
+        -webkit-transition-property: -webkit-transform;
+        -webkit-transition-duration: 1s;
+        -moz-transition-property: -moz-transform;
+        -moz-transition-duration: 1s;
+    }
+    &:hover {
+        i.animated {
+            -webkit-animation-name: pulse;
+            -moz-animation-name: pulse;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+        }
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.content-section {
+    padding-top: 100px;
+}
+
+
+.btn {
+    /*text-transform: uppercase;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 0;
+}
+
+.btn-default {
+    border: 1px solid @primary;
+    color: @primary;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        border: 1px solid @primary;
+        outline: none;
+        color: black;
+        background-color: @primary;
+    }
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+    @media(max-width:1199px) {
+        margin-top: 15px;
+    }
+    @media(max-width:767px) {
+        li {
+            display: block;
+            margin-bottom: 20px;
+            padding: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+footer {
+    padding: 50px 0;
+    p {
+        margin: 0;
+    }
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: fade(white, 20%);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: fade(white, 20%);
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+body {
+    webkit-tap-highlight-color: fade(white, 20%);
+}
+
+.caption {
+    h2 {
+        margin-bottom: 10px;
+    }
+}
+
+.gardening {
+    background: url(../img/litg-gardening-cr.jpg) no-repeat top center;
+}
+
+.landscaping {
+    background: url(../img/litg-landscaping-cr-rs.jpg) no-repeat top center;
+}
