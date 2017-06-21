@@ -34,13 +34,9 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-family: 'Gentium Book Basic', serif;
+    /*font-family: 'Gentium Book Basic', serif;*/
     font-weight: 400;
     letter-spacing: 1px;
-}
-
-h1 {
-    text-transform: uppercase;
 }
 
 p {
@@ -271,11 +267,6 @@ a {
     }
 }
 
-.content-section {
-    padding-top: 100px;
-}
-
-
 .btn {
     /*text-transform: uppercase;*/
     font-family: 'Open Sans', sans-serif;
@@ -353,10 +344,38 @@ body {
     }
 }
 
+.divider {
+    padding: 40px;
+    h1 {
+        color: @white;
+        font-size: 32px;
+    }
+    h2 {
+        line-height: 1.5;
+        color: @dwhite;
+        padding-top: 8px;
+        font-size: 16px;
+        font-weight: 200;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 65px;
+        h1 {
+            font-size: 63px;
+        }
+        h2 {
+            padding-top: 16px;
+            color: @dwhite;
+            font-size: 26px;
+            line-height: 1.5;
+            font-weight: 200;
+        }
+    }
+}
+
 .gardening {
     background: url(../img/litg-gardening-cr.jpg) no-repeat top center;
 }
 
 .landscaping {
-    background: url(../img/litg-landscaping-cr-rs.jpg) no-repeat top center;
+    background: url(../img/litg-landscaping-cr.jpg) no-repeat top center;
 }
