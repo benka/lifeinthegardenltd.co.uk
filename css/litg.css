@@ -81,6 +81,10 @@
   background-color: rgba(184, 184, 184, 0.3);
   color: #404040;
 }
+.bg-transp-80 {
+  background-color: rgba(184, 184, 184, 0.8);
+  color: #404040;
+}
 .cust_col {
   padding-left: 20px;
   padding-right: 20px;
@@ -130,6 +134,9 @@ hr {
 .jumbotron div.row.b-hr {
   padding-bottom: 50px;
   border-bottom: 1px solid #ddd;
+}
+.text-left {
+  text-align: left;
 }
 body {
   width: 100%;
@@ -279,6 +286,7 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body .intro-text {
+  color: #2b4732;
   font-size: 3vw;
 }
 @media (min-width: 768px) {
