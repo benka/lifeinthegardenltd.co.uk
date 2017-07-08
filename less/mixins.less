@@ -61,13 +61,10 @@
 }
 
 .bg-white {
+    z-index: -2;
+    position:relative;
     background-color: @bg_white;
     color: @bg_inv_white;
-}
-
-.bg-white-row {
-    background-color: @bg_white_2;
-    padding: 20px 5px;
 }
 
 .bg-light-brown {
@@ -110,7 +107,8 @@ hr {
 }
 
 .shadow {
-    box-shadow: 0 0 20px 0 @bg_dark;
+padding: 140px 0;
+    box-shadow: 0 0px 500px @bg_dark;
 }
 
 .shadow-light {
@@ -118,10 +116,7 @@ hr {
 }
 
 .jumbotron {
-    /*padding-top: 20px;
-    padding-bottom: 20px;*/
-
-    background-color: @bg_white;
+    background-color: @bg_white_2;
     /*@media screen and (min-width: 768px) {
         padding-top: 20px;
         padding-bottom: 20px;

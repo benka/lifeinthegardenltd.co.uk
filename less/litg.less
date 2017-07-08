@@ -373,10 +373,28 @@ body {
     }
 }
 
+.divider::after {
+    content: "";
+    width: 100%;
+    height: 0px;
+    margin-top: 65px;
+    display: block;
+    position: absolute;
+    margin-left:-65px;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px 10px @bg_dark_transp-50;
+       -moz-box-shadow: 0 0 20px 10px @bg_dark_transp-50;
+            box-shadow: 0 0 20px 10px @bg_dark_transp-50;
+}
+
 .gardening {
+    z-index: 3;
+    position:relative;
     background: url(../img/litg-gardening-cr.jpg) no-repeat top center;
 }
 
 .landscaping {
+    z-index: -2;
+    position:relative;
     background: url(../img/litg-landscaping-cr.jpg) no-repeat top center;
 }
