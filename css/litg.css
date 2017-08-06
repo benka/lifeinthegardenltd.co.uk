@@ -486,6 +486,7 @@ body {
   }
 }
 .gardening {
+  color: #404040;
   border-top: 50px solid rgba(56, 42, 24, 0.3);
   z-index: -2;
   /*position:relative;*/
@@ -496,6 +497,7 @@ body {
   -o-background-size: cover;
 }
 .landscaping {
+  color: #404040;
   border-top: 50px solid rgba(56, 42, 24, 0.3);
   z-index: -2;
   /*position:relative;*/
