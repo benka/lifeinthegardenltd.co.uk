@@ -30,6 +30,9 @@
 .heavy {
   font-weight: 700;
 }
+.t-pad-20 {
+  margin-top: 20px;
+}
 .t-pad-50 {
   margin-top: 50px;
 }
@@ -44,6 +47,12 @@
 }
 .b-pad-10 {
   margin-bottom: 10px;
+}
+.b-pad-200 {
+  margin-bottom: 200px;
+}
+.m-right-30 {
+  margin-right: 30px;
 }
 .bg-navbar {
   background: rgba(39, 39, 39, 0.5);
@@ -68,7 +77,7 @@
   color: #404040;
 }
 .bg-brown {
-  background-color: #705e46;
+  background-color: #382a18;
   color: #404040;
 }
 .bg-dark {
@@ -77,6 +86,10 @@
 }
 .bg-transp {
   background-color: rgba(184, 184, 184, 0.3);
+  color: #404040;
+}
+.bg-transp-cont {
+  background-color: rgba(56, 42, 24, 0.3);
   color: #404040;
 }
 .bg-transp-80 {
@@ -94,19 +107,13 @@ hr {
 .page-scroll {
   font-size: 16px;
 }
-.shadow {
-  padding: 140px 0;
-  box-shadow: 0 0px 500px #272727;
-}
 .shadow-light {
+  -webkit-box-shadow: 0 0 10px 0 rgba(180, 180, 180, 0.5);
+  -moz-box-shadow: 0 0 10px 0 rgba(180, 180, 180, 0.5);
   box-shadow: 0 0 10px 0 rgba(180, 180, 180, 0.5);
 }
 .jumbotron {
   background-color: #f8f8f8;
-  /*@media screen and (min-width: 768px) {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }*/
 }
 .jumbotron h1 {
   padding-bottom: 20px;
@@ -141,7 +148,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #fdfdfd;
   background-color: #272727;
-  /*background: url(../img/litg.jpg) no-repeat bottom right fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -451,7 +457,7 @@ body {
   margin-bottom: 10px;
 }
 .divider {
-  padding: 40px;
+  padding: 40px 0;
 }
 .divider h1 {
   color: #ffffff;
@@ -466,7 +472,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .divider {
-    padding: 65px;
+    padding: 65px 0;
   }
   .divider h1 {
     font-size: 63px;
@@ -479,26 +485,23 @@ body {
     font-weight: 200;
   }
 }
-.divider::after {
-  content: "";
-  width: 100%;
-  height: 0px;
-  margin-top: 65px;
-  display: block;
-  position: absolute;
-  margin-left: -65px;
-  z-index: -1;
-  -webkit-box-shadow: 0 0 20px 10px rgba(39, 39, 39, 0.5);
-  -moz-box-shadow: 0 0 20px 10px rgba(39, 39, 39, 0.5);
-  box-shadow: 0 0 20px 10px rgba(39, 39, 39, 0.5);
-}
 .gardening {
-  z-index: 3;
-  position: relative;
-  background: url(../img/litg-gardening-cr.jpg) no-repeat top center;
+  border-top: 50px solid rgba(56, 42, 24, 0.3);
+  z-index: -2;
+  /*position:relative;*/
+  background: url(../img/litg-gardening.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 .landscaping {
+  border-top: 50px solid rgba(56, 42, 24, 0.3);
   z-index: -2;
-  position: relative;
-  background: url(../img/litg-landscaping-cr.jpg) no-repeat top center;
+  /*position:relative;*/
+  background: url(../img/litg-landscaping.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }

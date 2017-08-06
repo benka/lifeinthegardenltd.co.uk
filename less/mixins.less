@@ -32,6 +32,10 @@
     font-weight: 700;
 }
 
+.t-pad-20 {
+    margin-top: 20px;
+}
+
 .t-pad-50 {
     margin-top: 50px;
 }
@@ -50,6 +54,14 @@
 
 .b-pad-10 {
     margin-bottom: 10px;
+}
+
+.b-pad-200 {
+    margin-bottom: 200px;
+}
+
+.m-right-30 {
+    margin-right: 30px;
 }
 
 .bg-navbar {
@@ -87,6 +99,11 @@
     color: @bg_inv_white;
 }
 
+.bg-transp-cont {
+    background-color: @bg_transp-brown;
+    color: @bg_inv_white;
+}
+
 .bg-transp-80 {
     background-color: @bg_transp-80;
     color: @bg_inv_white;
@@ -106,22 +123,14 @@ hr {
     font-size: 16px;
 }
 
-.shadow {
-padding: 140px 0;
-    box-shadow: 0 0px 500px @bg_dark;
-}
-
 .shadow-light {
+    -webkit-box-shadow: 0 0 10px 0 @bg_light;
+    -moz-box-shadow: 0 0 10px 0 @bg_light;
     box-shadow: 0 0 10px 0 @bg_light;
 }
 
 .jumbotron {
     background-color: @bg_white_2;
-    /*@media screen and (min-width: 768px) {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }*/
-
     h1 {
         padding-bottom: 20px;
         border-bottom: 1px solid @green;
