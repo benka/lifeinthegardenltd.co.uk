@@ -124,15 +124,19 @@ hr {
   color: #7a7a7a;
 }
 .jumbotron p.small {
-  font-size: 10px;
+  font-size: 14px;
 }
 @media screen and (min-width: 768px) {
   .jumbotron p.small {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .jumbotron div.row img {
   width: 100%;
+  height: 100%;
+}
+.jumbotron div.row img.affiliate {
+  width: auto;
   height: 100%;
 }
 .jumbotron div.row.b-hr {
@@ -141,6 +145,11 @@ hr {
 }
 .text-left {
   text-align: left;
+}
+.contact-logo {
+  background-color: #fff;
+  padding: 15px;
+  margin: 5px;
 }
 body {
   width: 100%;
